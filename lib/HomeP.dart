@@ -1,3 +1,4 @@
+import 'package:firebase1/firebase_storage/FirebaseStorage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class _HomePState extends State<HomeP> {
 
         // Once complete, show your application
         if (snapshot.connectionState == ConnectionState.done) {
-          return LoginP();
+          return FStorage();
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
